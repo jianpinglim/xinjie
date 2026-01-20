@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const ANSWER = "ryan";
+const SUCCESS_URL = "https://youtu.be/4Of_DlrMX3I";
 const STORAGE_KEY = "nameguesser.guesses.v1";
 
 function normalizeGuess(value: string) {
@@ -61,7 +62,7 @@ export default function Home() {
     setGuess("");
 
     if (normalized === ANSWER) {
-      router.push("/success");
+      window.location.assign(SUCCESS_URL);
     } else {
       setMessage("Nope — try again.");
     }
@@ -141,7 +142,7 @@ export default function Home() {
         </div>
 
         <p className="mx-auto mt-6 max-w-xl text-center text-xs text-zinc-500 dark:text-zinc-500">
-          Tip: the correct answer redirects you.
+          Tip: the correct answer opens a surprise.
         </p>
       </main>
     </div>
