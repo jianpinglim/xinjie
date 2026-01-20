@@ -77,7 +77,7 @@ export default function Home() {
       <main className="mx-auto w-full max-w-xl">
         <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-zinc-950">
           <h1 className="text-2xl font-semibold tracking-tight">
-            Guess my name
+            Hello! Xin Di&apos;s sister! Guess my english name!
           </h1>
           <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
             Type a name and press Enter. Unlimited tries.
